@@ -1,0 +1,22 @@
+Although the previous example is valid, usually you don't want to put your business logic in a Job. A better approach is to create an additional bean which the `Job` invokes. This approach decouples your business logic from the scheduling logic. Moreover, it facilities testing and maintenance. Let’s see an example:
+
+Create the following use case:
+
+[source, java]
+.src/main/kotlin/example/micronaut/EmailUseCase.kt
+----
+include::{sourceDir}/src/main/kotlin/example/micronaut/EmailUseCase.kt[]
+----
+
+And then the job:
+
+[source, java]
+.src/main/kotlin/example/micronaut/DailyEmailJob.kt
+----
+include::{sourceDir}/src/main/kotlin/example/micronaut/DailyEmailJob.kt[]
+----
+
+<1> To register a Singleton in Micronaut's application context annotate your class with `javax.inject.Singleton`
+<2> Constructor injection.
+<3> Trigger the job once a day at 04:30 AM
+<4> Call the injected use case
