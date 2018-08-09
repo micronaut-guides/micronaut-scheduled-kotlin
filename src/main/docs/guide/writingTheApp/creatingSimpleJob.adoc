@@ -1,6 +1,6 @@
 Create a file and add the following:
 
-[source, java]
+[source, kotlin]
 .src/main/kotlin/example/micronaut/HelloWorldJob.kt
 ----
 include::{sourceDir}/src/main/kotlin/example/micronaut/HelloWorldJob.kt[]

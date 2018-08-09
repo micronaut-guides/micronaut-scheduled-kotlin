@@ -2,7 +2,7 @@ Although the previous example is valid, usually you don't want to put your busin
 
 Create the following use case:
 
-[source, java]
+[source, kotlin]
 .src/main/kotlin/example/micronaut/EmailUseCase.kt
 ----
 include::{sourceDir}/src/main/kotlin/example/micronaut/EmailUseCase.kt[]

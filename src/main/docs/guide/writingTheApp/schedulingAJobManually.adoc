@@ -6,7 +6,7 @@ To test it out, we are going to call twice a new use case named `RegisterUseCase
 
 Create a bean, `BootStrap.kt`, which listens to the application startup event.
 
-[source, java]
+[source, kotlin]
 .src/main/kotlin/example/micronaut/BootStrap.kt
 ----
 include::{sourceDir}/src/main/kotlin/example/micronaut/BootStrap.kt[]
@@ -24,7 +24,7 @@ As you see in the previous example, subscribing to an event is as easy as implem
 
 Create a runnable task `EmailTask.kt`
 
-[source, java]
+[source, kotlin]
 .src/main/kotlin/example/micronaut/EmailTask.kt
 ----
 include::{sourceDir}/src/main/kotlin/example/micronaut/EmailTask.kt[]
@@ -32,7 +32,7 @@ include::{sourceDir}/src/main/kotlin/example/micronaut/EmailTask.kt[]
 
 Create `RegisterService.kt` which schedules the previous task.
 
-[source, java]
+[source, kotlin]
 .src/main/kotlin/example/micronaut/RegisterUseCase.kt
 ----
 include::{sourceDir}/src/main/kotlin/example/micronaut/RegisterUseCase.kt[]
