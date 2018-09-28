@@ -13,7 +13,7 @@ include::{sourceDir}/src/main/kotlin/example/micronaut/BootStrap.kt[]
 ----
 
 <1> Annotate `BootStrap.kt` with `@Singleton` to register it in the application context.
-<3> Constructor injection of `RegisterUseCase`
+<2> Constructor injection of `RegisterUseCase`
 <3> Listen to the event `ServerStartupEvent`
 <4> `onApplicationEvent` is invoked when the app starts.
 
