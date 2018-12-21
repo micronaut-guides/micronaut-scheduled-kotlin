@@ -30,7 +30,7 @@ Create a runnable task `EmailTask.kt`
 include::{sourceDir}/src/main/kotlin/example/micronaut/EmailTask.kt[]
 ----
 
-Create `RegisterService.kt` which schedules the previous task.
+Create `RegisterUseCase.kt` which schedules the previous task.
 
 [source, kotlin]
 .src/main/kotlin/example/micronaut/RegisterUseCase.kt
