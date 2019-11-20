@@ -1,10 +1,9 @@
 package example.micronaut
 
 import org.slf4j.LoggerFactory
-
-import javax.inject.Singleton
 import java.text.SimpleDateFormat
-import java.util.Date
+import java.util.*
+import javax.inject.Singleton
 
 @Singleton
 class EmailUseCase {
