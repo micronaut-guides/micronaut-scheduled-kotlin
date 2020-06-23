@@ -13,6 +13,6 @@ class EmailUseCase {
     }
 
     companion object {
-        private val LOG = LoggerFactory.getLogger(EmailUseCase::class.java) // <2>
+        private val LOG = LoggerFactory.getLogger(EmailUseCase::class.java)
     }
 }
